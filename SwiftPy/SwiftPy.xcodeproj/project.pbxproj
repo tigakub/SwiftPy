@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2A67C0D2972189D00295A71 /* MTestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A67C0C2972189D00295A71 /* MTestModule.m */; };
+		C2B4386B2971FB4500B9584B /* libpython3.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B438672971FAEE00B9584B /* libpython3.10.dylib */; };
+		C2B43872297206BD00B9584B /* TestModule.c in Sources */ = {isa = PBXBuildFile; fileRef = C2B43871297206BD00B9584B /* TestModule.c */; };
+		C2C08F742970795F0053140F /* SwiftPyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C08F732970795F0053140F /* SwiftPyApp.swift */; };
+		C2C08F762970795F0053140F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C08F752970795F0053140F /* ContentView.swift */; };
+		C2C08F78297079600053140F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C08F77297079600053140F /* Assets.xcassets */; };
+		C2C08F7B297079600053140F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C08F7A297079600053140F /* Preview Assets.xcassets */; };
+		C2C08F86297079600053140F /* SwiftPyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C08F85297079600053140F /* SwiftPyTests.swift */; };
+		C2C08F90297079600053140F /* SwiftPyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C08F8F297079600053140F /* SwiftPyUITests.swift */; };
+		C2C08F92297079600053140F /* SwiftPyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C08F91297079600053140F /* SwiftPyUITestsLaunchTests.swift */; };
+		C2C08FA02970798C0053140F /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = C2C08F9F2970798C0053140F /* PythonKit */; };
+		C2C08FA4297080950053140F /* py310 in Resources */ = {isa = PBXBuildFile; fileRef = C2C08FA3297080950053140F /* py310 */; };
+		C2C08FA72970861E0053140F /* EmbeddedPython.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C08FA62970861E0053140F /* EmbeddedPython.swift */; };
+		C2C08FA929708AE40053140F /* StereoDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C08FA829708AE40053140F /* StereoDepth.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2C08F82297079600053140F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2C08F682970795F0053140F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2C08F6F2970795F0053140F;
+			remoteInfo = SwiftPy;
+		};
+		C2C08F8C297079600053140F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2C08F682970795F0053140F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2C08F6F2970795F0053140F;
+			remoteInfo = SwiftPy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C2A67C0C2972189D00295A71 /* MTestModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTestModule.m; sourceTree = "<group>"; };
+		C2A67C0E297218A700295A71 /* MTestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTestModule.h; sourceTree = "<group>"; };
+		C2B438672971FAEE00B9584B /* libpython3.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpython3.10.dylib; path = py310/lib/libpython3.10.dylib; sourceTree = "<group>"; };
+		C2B4386F297206BD00B9584B /* SwiftPy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftPy-Bridging-Header.h"; sourceTree = "<group>"; };
+		C2B43870297206BD00B9584B /* TestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
+		C2B43871297206BD00B9584B /* TestModule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TestModule.c; sourceTree = "<group>"; };
+		C2C08F702970795F0053140F /* SwiftPy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C08F732970795F0053140F /* SwiftPyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPyApp.swift; sourceTree = "<group>"; };
+		C2C08F752970795F0053140F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C2C08F77297079600053140F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2C08F7A297079600053140F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C2C08F7C297079600053140F /* SwiftPy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftPy.entitlements; sourceTree = "<group>"; };
+		C2C08F81297079600053140F /* SwiftPyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C08F85297079600053140F /* SwiftPyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPyTests.swift; sourceTree = "<group>"; };
+		C2C08F8B297079600053140F /* SwiftPyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C08F8F297079600053140F /* SwiftPyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPyUITests.swift; sourceTree = "<group>"; };
+		C2C08F91297079600053140F /* SwiftPyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2C08FA3297080950053140F /* py310 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = py310; sourceTree = "<group>"; };
+		C2C08FA62970861E0053140F /* EmbeddedPython.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedPython.swift; sourceTree = "<group>"; };
+		C2C08FA829708AE40053140F /* StereoDepth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StereoDepth.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2C08F6D2970795F0053140F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B4386B2971FB4500B9584B /* libpython3.10.dylib in Frameworks */,
+				C2C08FA02970798C0053140F /* PythonKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2C08F7E297079600053140F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2C08F88297079600053140F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2B438662971FAEE00B9584B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2B438672971FAEE00B9584B /* libpython3.10.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2B4386E2972058500B9584B /* Python Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C2A67C0E297218A700295A71 /* MTestModule.h */,
+				C2A67C0C2972189D00295A71 /* MTestModule.m */,
+				C2B43870297206BD00B9584B /* TestModule.h */,
+				C2B43871297206BD00B9584B /* TestModule.c */,
+				C2B4386F297206BD00B9584B /* SwiftPy-Bridging-Header.h */,
+			);
+			path = "Python Extension";
+			sourceTree = "<group>";
+		};
+		C2C08F672970795F0053140F = {
+			isa = PBXGroup;
+			children = (
+				C2C08FA3297080950053140F /* py310 */,
+				C2C08F722970795F0053140F /* SwiftPy */,
+				C2C08F84297079600053140F /* SwiftPyTests */,
+				C2C08F8E297079600053140F /* SwiftPyUITests */,
+				C2C08F712970795F0053140F /* Products */,
+				C2B438662971FAEE00B9584B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C2C08F712970795F0053140F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2C08F702970795F0053140F /* SwiftPy.app */,
+				C2C08F81297079600053140F /* SwiftPyTests.xctest */,
+				C2C08F8B297079600053140F /* SwiftPyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2C08F722970795F0053140F /* SwiftPy */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4386E2972058500B9584B /* Python Extension */,
+				C2C08F732970795F0053140F /* SwiftPyApp.swift */,
+				C2C08F752970795F0053140F /* ContentView.swift */,
+				C2C08FA62970861E0053140F /* EmbeddedPython.swift */,
+				C2C08FA829708AE40053140F /* StereoDepth.swift */,
+				C2C08F77297079600053140F /* Assets.xcassets */,
+				C2C08F7C297079600053140F /* SwiftPy.entitlements */,
+				C2C08F79297079600053140F /* Preview Content */,
+			);
+			path = SwiftPy;
+			sourceTree = "<group>";
+		};
+		C2C08F79297079600053140F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C2C08F7A297079600053140F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2C08F84297079600053140F /* SwiftPyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2C08F85297079600053140F /* SwiftPyTests.swift */,
+			);
+			path = SwiftPyTests;
+			sourceTree = "<group>";
+		};
+		C2C08F8E297079600053140F /* SwiftPyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2C08F8F297079600053140F /* SwiftPyUITests.swift */,
+				C2C08F91297079600053140F /* SwiftPyUITestsLaunchTests.swift */,
+			);
+			path = SwiftPyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2C08F6F2970795F0053140F /* SwiftPy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2C08F95297079600053140F /* Build configuration list for PBXNativeTarget "SwiftPy" */;
+			buildPhases = (
+				C2C08F6C2970795F0053140F /* Sources */,
+				C2C08F6D2970795F0053140F /* Frameworks */,
+				C2C08F6E2970795F0053140F /* Resources */,
+				C2A67C0A29720CF600295A71 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftPy;
+			packageProductDependencies = (
+				C2C08F9F2970798C0053140F /* PythonKit */,
+			);
+			productName = SwiftPy;
+			productReference = C2C08F702970795F0053140F /* SwiftPy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2C08F80297079600053140F /* SwiftPyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2C08F98297079600053140F /* Build configuration list for PBXNativeTarget "SwiftPyTests" */;
+			buildPhases = (
+				C2C08F7D297079600053140F /* Sources */,
+				C2C08F7E297079600053140F /* Frameworks */,
+				C2C08F7F297079600053140F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2C08F83297079600053140F /* PBXTargetDependency */,
+			);
+			name = SwiftPyTests;
+			productName = SwiftPyTests;
+			productReference = C2C08F81297079600053140F /* SwiftPyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C2C08F8A297079600053140F /* SwiftPyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2C08F9B297079600053140F /* Build configuration list for PBXNativeTarget "SwiftPyUITests" */;
+			buildPhases = (
+				C2C08F87297079600053140F /* Sources */,
+				C2C08F88297079600053140F /* Frameworks */,
+				C2C08F89297079600053140F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2C08F8D297079600053140F /* PBXTargetDependency */,
+			);
+			name = SwiftPyUITests;
+			productName = SwiftPyUITests;
+			productReference = C2C08F8B297079600053140F /* SwiftPyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2C08F682970795F0053140F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C2C08F6F2970795F0053140F = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+					C2C08F80297079600053140F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C2C08F6F2970795F0053140F;
+					};
+					C2C08F8A297079600053140F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C2C08F6F2970795F0053140F;
+					};
+				};
+			};
+			buildConfigurationList = C2C08F6B2970795F0053140F /* Build configuration list for PBXProject "SwiftPy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2C08F672970795F0053140F;
+			packageReferences = (
+				C2C08F9E2970798C0053140F /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
+			productRefGroup = C2C08F712970795F0053140F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2C08F6F2970795F0053140F /* SwiftPy */,
+				C2C08F80297079600053140F /* SwiftPyTests */,
+				C2C08F8A297079600053140F /* SwiftPyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2C08F6E2970795F0053140F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2C08FA4297080950053140F /* py310 in Resources */,
+				C2C08F7B297079600053140F /* Preview Assets.xcassets in Resources */,
+				C2C08F78297079600053140F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2C08F7F297079600053140F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2C08F89297079600053140F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C2A67C0A29720CF600295A71 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\necho \"Create Frameworks folder if it doesn't exist.\"\n[ ! -d \"$CODESIGNING_FOLDER_PATH/Contents/Frameworks\" ] && mkdir \"$CODESIGNING_FOLDER_PATH/Contents/Frameworks\"\n\necho \"Create soft link, if one does not exist, to libpython3.10.dylib in the target's Frameworks folder.\"\n[ ! -f \"$CODESIGNING_FOLDER_PATH/Contents/Frameworks/libpython3.10.dylib\" ] && ln -s \"$CODESIGNING_FOLDER_PATH/Contents/Resources/py310/lib/libpython3.10.dylib\" \"$CODESIGNING_FOLDER_PATH/Contents/Frameworks/libpython3.10.dylib\"\n\necho \"Codesigning all embedded executables in $CODESIGNING_FOLDER_PATH/Contents/Resources/py310/bin\"\nfind \"$CODESIGNING_FOLDER_PATH/Contents/Resources/py310/bin/\" -perm +0444 -type f -exec /usr/bin/codesign -s \"$EXPANDED_CODE_SIGN_IDENTITY\" -fv -o runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags --generate-entitlement-der {} \\;\n\necho \"Codesigning all embedded shared libraries in $CODESIGNING_FOLDER_PATH/Contents/Resources/py310/\"\nfind \"$CODESIGNING_FOLDER_PATH/Contents/Resources/py310/\" -name \"*.so\" -exec /usr/bin/codesign -s \"$EXPANDED_CODE_SIGN_IDENTITY\" -fv -o runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags --generate-entitlement-der {} \\;\n\necho \"Codesigning all embedded static libraries in $CODESIGNING_FOLDER_PATH/Contents/Resources/py310/\"\nfind \"$CODESIGNING_FOLDER_PATH/Contents/Resources/py310/\" -name \"*.a\" -exec /usr/bin/codesign -s \"$EXPANDED_CODE_SIGN_IDENTITY\" -fv -o runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags --generate-entitlement-der {} \\;\n\necho \"Codesigning all embedded dynamic libraries in $CODESIGNING_FOLDER_PATH/Contents/Resources/py310/\"\nfind \"$CODESIGNING_FOLDER_PATH/Contents/Resources/py310/\" -name \"*.dylib\" -exec /usr/bin/codesign -s \"$EXPANDED_CODE_SIGN_IDENTITY\" -fv -o runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags --generate-entitlement-der {} \\;\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2C08F6C2970795F0053140F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2C08FA72970861E0053140F /* EmbeddedPython.swift in Sources */,
+				C2B43872297206BD00B9584B /* TestModule.c in Sources */,
+				C2C08F762970795F0053140F /* ContentView.swift in Sources */,
+				C2A67C0D2972189D00295A71 /* MTestModule.m in Sources */,
+				C2C08F742970795F0053140F /* SwiftPyApp.swift in Sources */,
+				C2C08FA929708AE40053140F /* StereoDepth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2C08F7D297079600053140F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2C08F86297079600053140F /* SwiftPyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2C08F87297079600053140F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2C08F90297079600053140F /* SwiftPyUITests.swift in Sources */,
+				C2C08F92297079600053140F /* SwiftPyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2C08F83297079600053140F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2C08F6F2970795F0053140F /* SwiftPy */;
+			targetProxy = C2C08F82297079600053140F /* PBXContainerItemProxy */;
+		};
+		C2C08F8D297079600053140F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2C08F6F2970795F0053140F /* SwiftPy */;
+			targetProxy = C2C08F8C297079600053140F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C2C08F93297079600053140F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2C08F94297079600053140F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C2C08F96297079600053140F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SwiftPy/SwiftPy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftPy/Preview Content\"";
+				DEVELOPMENT_TEAM = TTWJ8VQQ2V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/py310/include/python3.10";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/py310/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irregularobo.SwiftPy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftPy/Python Extension/SwiftPy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C2C08F97297079600053140F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SwiftPy/SwiftPy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftPy/Preview Content\"";
+				DEVELOPMENT_TEAM = TTWJ8VQQ2V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/py310/include/python3.10";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/py310/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irregularobo.SwiftPy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftPy/Python Extension/SwiftPy-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C2C08F99297079600053140F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTWJ8VQQ2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irregularobo.SwiftPyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftPy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftPy";
+			};
+			name = Debug;
+		};
+		C2C08F9A297079600053140F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTWJ8VQQ2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irregularobo.SwiftPyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftPy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftPy";
+			};
+			name = Release;
+		};
+		C2C08F9C297079600053140F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTWJ8VQQ2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irregularobo.SwiftPyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SwiftPy;
+			};
+			name = Debug;
+		};
+		C2C08F9D297079600053140F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTWJ8VQQ2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irregularobo.SwiftPyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SwiftPy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2C08F6B2970795F0053140F /* Build configuration list for PBXProject "SwiftPy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2C08F93297079600053140F /* Debug */,
+				C2C08F94297079600053140F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2C08F95297079600053140F /* Build configuration list for PBXNativeTarget "SwiftPy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2C08F96297079600053140F /* Debug */,
+				C2C08F97297079600053140F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2C08F98297079600053140F /* Build configuration list for PBXNativeTarget "SwiftPyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2C08F99297079600053140F /* Debug */,
+				C2C08F9A297079600053140F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2C08F9B297079600053140F /* Build configuration list for PBXNativeTarget "SwiftPyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2C08F9C297079600053140F /* Debug */,
+				C2C08F9D297079600053140F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2C08F9E2970798C0053140F /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2C08F9F2970798C0053140F /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2C08F9E2970798C0053140F /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C2C08F682970795F0053140F /* Project object */;
+}

@@ -1,0 +1,13 @@
+prefix=/opt/homebrew/Caskroom/miniconda/base/envs/py310
+exec_prefix=/opt/homebrew/Caskroom/miniconda/base/envs/py310
+libdir=/opt/homebrew/Caskroom/miniconda/base/envs/py310/lib
+sharedlibdir=/opt/homebrew/Caskroom/miniconda/base/envs/py310/lib
+includedir=/opt/homebrew/Caskroom/miniconda/base/envs/py310/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
